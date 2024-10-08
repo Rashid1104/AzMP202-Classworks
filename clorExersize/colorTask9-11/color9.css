@@ -1,0 +1,9 @@
+.items span:nth-child(3),span:nth-child(6){
+    background-color: red;
+}
+.items1 span:nth-last-child(2),span:nth-child(3){
+    background-color: pink;
+}
+li:nth-child(1){
+    background-color: gold;
+}
