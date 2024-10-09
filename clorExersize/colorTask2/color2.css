@@ -1,5 +1,7 @@
 img{
+    background-image: url("https://lh4.googleusercontent.com/proxy/iBdjdhA2jAkSoycJZgCa4Xch5LszBKXU31iEt_HTXk9mWi6C93qWFuktdkP7BsJZevvAgNfbjWOFoWM4IA");
    width: 300px;
+   background-position: center top;
 }
 body{
     background-color: lightyellow;
