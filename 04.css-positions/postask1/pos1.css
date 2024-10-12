@@ -1,0 +1,78 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    height: 180vh;
+    position: relative;
+}
+.car{
+    position: fixed; 
+    top: 250px; 
+    right: 0;
+    width: 50px;
+    height: 50px; 
+    justify-content: center;
+    align-items: center; 
+    /* position: fixed; 
+position: absolute;
+top: 26%;
+left: 96%; */
+}
+.box6{
+    background-color: red;
+    position: sticky;
+}
+.container {
+    margin-top: 4rem;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #f7e7ce;
+    border: 2px solid green;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.box1 {
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+.box2 {
+    background-color: rgb(133, 35, 35,0.5);
+    top: 45px;
+    left: 45px;
+    z-index: 2;
+}
+.box3 {
+    background-color: yellow;
+    top: 70px;
+    left: 70px;
+}
+.box4 {
+    background-color: orange;
+     top: 0;
+     left: 87%;
+     position: sticky;
+
+}
+.box5 {
+    background-color: green;
+    bottom: 20px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+}
+.box4{
+    /* top: 0;
+    left: 0; */
+}

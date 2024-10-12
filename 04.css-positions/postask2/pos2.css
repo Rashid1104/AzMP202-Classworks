@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.cards{
+    height: 191vh;
+   position: relative;
+}
+.list-container{
+   position: relative;
+}
+.back1{
+    position: fixed;
+    /* position: sticky; */
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    border: 22px solid black;
+    /* z-index: 10; */
+}
+.back{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    border: 22px solid black;
+}
