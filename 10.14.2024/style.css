@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 51px;
+}
+button{
+width: 82px;
+height: 41px;
+cursor: pointer;
+transition: all 0.6s;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+.start{
+    font-size: 24px;
+}
+.header nav ul{
+   gap: 10px;
+   display: flex;
+    }
+.header nav ul li a{
+color: black;
+}
+.About{
+    background-color: #fff;
+    color: rgb(255, 255, 255,0.1);
+}
+.head2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    background-color: black;
+    row-gap: 0.5rem;
+}
+.text{
+    font-size: 48px;
+    color: white;
+}
+.under{
+    color: rgba(255, 255, 255, 0.4);
+}
+main{
+    align-self: center;
+    margin-top: 200px;
+    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 100px 0; 
+    row-gap: 100px;
+}
+.card{
+    border-radius: 8px;
+    /* align-items: center;
+    display:inline-block; */
+    /* align-items: center; */
+border: 2px solid rgb(0, 0, 0,0.2);
+    background-color: #fff;
+    width: 300px; 
+    height: 450px;
+}
+img{
+    /* width: 100%; */
+    width: 300px;
+    height: 200px;
+}
+.texts{
+   margin: 20px 0;
+   text-align: center;
+}
+/* <div class="card">
+<img src="./product.png" alt="">
+<div class="texts">
+    <h2 class="products-text"> Species Items</h2><br>
+    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    <p><del>$20,00</del> $18,00</p>
+    <div class="but but2">
+        <button>Add to card</button>
+    </div>
+</div>
+</div> */
