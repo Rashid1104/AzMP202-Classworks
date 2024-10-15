@@ -1,0 +1,29 @@
+.col-1{
+    width: calc( 100% / 12 * 1);
+    padding: 1rem;
+}
+/* <div class="col-1 box">1</div> */
+.col-2{
+    width: calc( 100% / 12 * 2);
+    padding: 1rem;
+}
+/* <div class="col-2 box">2</div> */
+.col-3{
+    width: calc( 100% / 12 * 3);
+    padding: 1rem;
+}
+/* <div class="col-3 box">3</div> */
+.col-4{
+    width: calc( 100% / 12 * 4);
+    padding: 1rem;
+}
+/* <div class="col-4 box">4</div> */
+.col-6{
+    width: calc( 100% / 12 * 6);
+    padding: 1rem;
+}
+/* <div class="col-6 box">5</div> */
+.box{
+    background-color: aquamarine;
+    border: 8px solid black;
+}
