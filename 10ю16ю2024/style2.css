@@ -1,37 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-#header{
-   
+
+#header {
+
     background-color: #fff;
     width: 100%;
     height: 10vh;
 }
-.head{
+
+.head {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-ul{
-display: flex;
-gap: 16px;
+
+ul {
+    display: flex;
+    gap: 16px;
 }
-#header2{
+
+#header2 {
     background-color: rgba(230, 228, 226, 0.932);
     width: 100%;
     height: 6vh;
 }
-.main{
+
+.main {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.kapital{
-    border-radius: 12px ;
+
+.kapital {
+    border-radius: 12px;
     border-color: red;
     color: white;
     background-color: red;
@@ -41,16 +47,19 @@ gap: 16px;
     cursor: pointer;
     transition: all 0.6s;
 }
-button:hover{
+
+button:hover {
     border-color: red;
     color: red;
     background-color: white;
 
 }
-.new-icons{
+
+.new-icons {
     display: none;
 }
-.icon{
+
+.icon {
     border-radius: 4px;
     width: 25px;
     height: 25px;
@@ -58,32 +67,37 @@ button:hover{
     color: red;
     background-color: white;
 }
+
 @media only screen and(max-width: 986px) {
-    .main{
+    .main {
         display: none;
     }
-    .head{
-        display: none; 
+
+    .head {
+        display: none;
     }
-    .new-icons{
+
+    .new-icons {
         display: flex;
     }
 }
-h3{
+
+h3 {
     font-size: 2.5rem;
     color: #fff;
 }
-p{
+
+p {
     color: blue;
 }
-.cards{
- padding: 40px;
-   
-    width: 100%;
-    height: 25vh;
+
+#sect {
     background-color: darkblue;
 }
-i{
+
+.cards {}
+
+.row i {
     font-size: 2.5rem;
     color: rgb(221, 184, 20);
 }
