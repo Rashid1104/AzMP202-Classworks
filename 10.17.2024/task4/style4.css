@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    
+}
+body{
+    height: 300vh;
+}
+.bash{
+    box-shadow: 5px 5px 42px -5px rgba(34, 60, 80, 0.65);
+    width: 100%;
+    height:8vh;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   
+}
+.bash ul li{
+  
+}
+.title{
+padding-left: 200px;
+}
+.bash ul {
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between; 
+     gap: 10px;
+}
+
+#container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+#container2{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.main-1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.main-1{
+    position: relative;
+}
+img{
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    
+}
+.main-1 h2{
+    position: absolute;
+    bottom: 48%;
+    left: 48%;
+    right: 50%;
+    background-color: black;
+    width: 90px;
+    height: 80px;
+    text-align: center;
+    opacity: 0.6;
+}
+.title2{
+    color: #fff;
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 50%;
+    left: 48%;
+    right: 50%;
+    z-index: 4;
+}
+.tit1{
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 50%;
+    left: 55%;
+    right: 40%;
+    z-index: 4;
+}
+.maIN-2{
+    gap: 10px;
+}
+  .row img{
+    width: 100%;
+  }
+  .projects{
+    font-size: 2rem;
+    padding: 50px;
+  }
+  .row h3{
+    color: #fff;
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    background-color: black;
+  }
+  img{
+    /* width: 100%; */
+  }
+.btn{
+    font-size: 1.5rem;
+    height: 40px;
+    width: 90%;
+}
+.john{
+    font-size: 1.5rem;
+}
+span{
+
+}
+.cont{
+    text-align: center;
+}
