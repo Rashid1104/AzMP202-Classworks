@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#mir img{
+    width: 100%;
+    height: 55vh;
+}
+#cektor .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#cektor .icons i{
+    font-size: 4rem;
+    width: 80px;
+    height: 80px;
+    color: blue;
+    
+}
+#mir{
+    margin-bottom: 40px;
+}
+.card-body{
+    text-align: center;
+}
+/* .col-md-6 .img-fluid
+{
+width: 100%;
+height: 100%;
+} */
+#cektor{
+    margin-bottom: 200px;
+}
