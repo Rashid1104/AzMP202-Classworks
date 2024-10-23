@@ -1,0 +1,37 @@
+header{
+.container{
+
+    .header{   
+
+        @include flexBOX;
+        height: 106px;
+        nav{
+           
+            ul{
+                gap: 40px;
+                @include flexBOX;
+                li{
+                    a{
+                        color: $color-a;
+                        transition: all 0.6s;
+                    }
+                    a:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            gap: 30px;
+            i{
+                transition: all 0.6s;
+            }
+            i:hover{
+                color: red;
+             }
+        }
+        
+    }
+}
+}
