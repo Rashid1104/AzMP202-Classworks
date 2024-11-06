@@ -371,19 +371,19 @@ const products = [
 
 // ? task6
 
-// const count = products.every(product => product.count > 100);
+// const count = products.every(product => product.rating.count > 100);
 //   console.log(count);
 
 // ? task7
   
-// const endirim = products.map(product => {
-//     if (product.category.toLowerCase() === 'electronics') {
-//         return { ...product, price: product.price * 0.5 };
-//     }
-//     return product;
-// });
+const endirim = products.map(product => {
+    if (product.category.toLowerCase() === 'electronics') {
+        return { ...product, price: product.price * 0.5 };
+    }
+    return product;
+});
 
-// console.log(endirim);
+console.log(endirim);
 
 
   
