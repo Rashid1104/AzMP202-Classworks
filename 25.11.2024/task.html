@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            background-color: #F6F7F9;
+        }
+
+        #header {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #17b6ff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+.right{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+        .headH2 {
+            font-size: 2rem;
+            color: #3563E9;
+        }
+
+        .text {
+            width: 300px;
+            height: 40px;
+            border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: none;
+            border-radius: 5px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="left">
+            <h2 class="headH2">The Blog Website</h2>
+           <input class="text"  id="searchInput" type="text"  placeholder="Search something here"> 
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="./task.html">Home</a></li>
+                <li><a href="">New blog</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+</body>
+</html>

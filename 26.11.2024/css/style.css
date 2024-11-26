@@ -1,0 +1,29 @@
+img {
+    width: 100%;
+}
+
+body {
+    padding: 100px;
+}
+
+.cards {
+    /* width: 90%;
+    gap: 10px; */
+}
+
+#input-text {
+    width: 90%;
+}
+
+.texts {
+    padding: 15px;
+}
+button {
+    width: 10%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+#back-btn {
+    width: 10%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Create-btn {
+    width: 10%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Edit-btn {
+    width: 60px;
+    padding: 10px;
+    background: #ffa600;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#delete-btn {
+    width: 100px;
+    padding: 10px;
+    background: #d80101;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 3.2rem;
+}
+
+body {
+    padding: 100px;
+}
+
+table {
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+tr,
+th {
+    border-bottom: 1px solid rgb(182, 182, 182, 0.6);
+
+}
+
+tr,
+th {
+    border-bottom: 1px solid rgb(182, 182, 182, 0.6);
+    padding-bottom: 12px;
+}
+
+tbody,
+td {
+    border-bottom: 1px solid rgb(182, 182, 182, 0.6);
+    padding-bottom: 12px;
+    padding-top: 3px;
+}
+
+.keys {
+    text-align: left;
+}

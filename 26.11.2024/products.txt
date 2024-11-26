@@ -1,0 +1,68 @@
+ "products": [
+      {
+        "id": "2",
+        "name": "Smartphone Plus",
+        "description": "Flagship smartphone with all the latest features.",
+        "price": 899.99,
+        "stock": 50,
+        "discount": 10,
+        "categoryId": 3,
+        "image": "https://www.techadvisor.com/wp-content/uploads/2024/11/best-phones-2024-11.jpg?quality=50&strip=all&quot",
+        "createdAt": "2024-11-21"
+      },
+      {
+        "id": "1",
+        "name": "Gaming Headset X",
+        "description": "Comfortable headset with immersive sound for gaming.",
+        "price": 199.99,
+        "stock": 100,
+        "discount": 5,
+        "categoryId": 4,
+        "image": "https://d3fppka8t5rpz7.cloudfront.net/filters:format(webp)/dev/images/81mLFIaCYwL._SL1500_.jpg",
+        "createdAt": "2024-11-20"
+      },
+      {
+        "id": "5",
+        "name": "Smartwatch Ultr",
+        "description": "Advanced smartwatch with fitness tracking and notifications.",
+        "price": 299.99,
+        "stock": 75,
+        "discount": 20,
+        "categoryId": 3,
+        "image": "https://www.techadvisor.com/wp-content/uploads/2024/11/best-phones-2024-11.jpg?quality=50&strip=all&quot",
+        "createdAt": "2024-11-19"
+      },
+      {
+        "id": "6",
+        "name": "4K Television",
+        "description": "Ultra HD 4K television with vivid colors and clarity.",
+        "price": 899.99,
+        "stock": 25,
+        "discount": 25,
+        "categoryId": 2,
+        "image": "https://d3fppka8t5rpz7.cloudfront.net/filters:format(webp)/dev/images/81mLFIaCYwL._SL1500_.jpg",
+        "createdAt": "2024-11-18"
+      },
+      {
+        "id": "7",
+        "name": "4K Santa Niggas",
+        "description": "Ultra HD 4K television with vivid colors and clarity.",
+        "price": 199.99,
+        "stock": 25,
+        "discount": 25,
+        "categoryId": 2,
+        "image": "field-niggas-1-uai-1733x1300.jpg",
+        "createdAt": "2024-11-18"
+      },
+      {
+        "id": "9",
+        "name": "Chill guy",
+        "description": "Ultra Chill guy with a bottle",
+        "price": 1299.99,
+        "stock": 25,
+        "discount": 25,
+        "categoryId": 2,
+        "image": "ja-prosto-chilovyj.jpg",
+        "createdAt": "2024-11-18"
+      }
+    ]
