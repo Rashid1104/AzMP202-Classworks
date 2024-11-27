@@ -83,6 +83,17 @@
       "categoryId": 2,
       "image": "field-niggas-1-uai-1733x1300.jpg",
       "createdAt": "2024-11-18"
+    },
+    {
+      "id": "9",
+      "name": "Chill guy",
+      "description": "Ultra Chill guy with a bottle",
+      "price": 1299.99,
+      "stock": 25,
+      "discount": 25,
+      "categoryId": 2,
+      "image": "ja-prosto-chilovyj.jpg",
+      "createdAt": "2024-11-18"
     }
   ],
   "categories": [
