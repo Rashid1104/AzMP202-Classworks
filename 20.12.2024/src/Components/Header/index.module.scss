@@ -1,0 +1,62 @@
+.container {
+    // max-width: 1200px;
+    // margin: 0 auto;
+}
+
+.header {
+    background-color: #20484F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 82px;
+    height: 41px;
+    padding: 10px 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btns {
+    gap: 1rem;
+}
+
+.btn {}
+
+.btn-sing-Up {
+    color: #20484F;
+    background-color: #B8E4DA;
+}
+
+.btn-log-in {
+    color: #fff;
+    background-color: #20484F;
+}
