@@ -1,0 +1,339 @@
+{
+    "products": [
+      {
+        "image": "https://unsplash.it/50/50?image=1",
+        "id": 1,
+        "title": "Men's Cotton T-Shirt",
+        "category": "men's clothing",
+        "description": "Soft and breathable cotton t-shirt.",
+        "description2": "A soft and breathable cotton t-shirt perfect for casual wear. It features a comfortable fit, and its lightweight fabric makes it ideal for warm weather, ensuring that you stay cool and relaxed throughout the day. Whether you're lounging at home or heading out for a casual outing, this t-shirt offers the perfect blend of comfort and style.",
+        "price": 12.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=2",
+        "id": 2,
+        "title": "Women's Summer Dress",
+        "category": "women's clothing",
+        "description": "Light and airy dress for summer.",
+        "description2": "This light and airy summer dress is designed to keep you cool and stylish in the hot months. Made with breathable fabric, it allows for free movement while offering a flattering silhouette. Whether you're at the beach or enjoying a sunny day out, this dress combines elegance and comfort effortlessly, making it a must-have in every wardrobe.",
+        "price": 25.49
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=3",
+        "id": 3,
+        "title": "Smartphone",
+        "category": "electronics",
+        "description": "Latest model with advanced features.",
+        "description2": "This smartphone is packed with the latest technology, offering a fast and seamless user experience. With a high-resolution display, powerful processor, and advanced camera features, it’s designed to keep up with your everyday needs. Whether you're streaming videos, taking photos, or using apps, this smartphone guarantees exceptional performance and long-lasting battery life.",
+        "price": 699.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=4",
+        "id": 4,
+        "title": "Gold Necklace",
+        "category": "jewelery",
+        "description": "Elegant gold necklace for special occasions.",
+        "description2": "This elegant gold necklace is the perfect accessory for any special occasion. Its timeless design features a delicate chain and a stunning pendant, making it a sophisticated addition to any outfit. Whether you're attending a formal event or simply looking to elevate your everyday style, this necklace is sure to add a touch of luxury and elegance.",
+        "price": 199.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=5",
+        "id": 5,
+        "title": "Men's Denim Jacket",
+        "category": "men's clothing",
+        "description": "Classic denim jacket for casual wear.",
+        "description2": "This classic denim jacket is the ultimate staple for a laid-back, casual look. Made from durable denim, it provides both style and comfort. The timeless design and versatile fit make it perfect for layering over t-shirts or shirts, offering a rugged yet fashionable touch to any outfit. Ideal for cooler weather, this jacket promises to be a long-lasting wardrobe essential.",
+        "price": 39.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=6",
+        "id": 6,
+        "title": "Women's Yoga Pants",
+        "category": "women's clothing",
+        "description": "Stretchable and comfortable yoga pants.",
+        "description2": "These stretchable and comfortable yoga pants are designed to support you during your workouts while offering a flattering fit. Made from soft and flexible fabric, they provide maximum comfort and freedom of movement, whether you're practicing yoga, hitting the gym, or running errands. With a stylish design and breathable material, these pants are a versatile addition to any active wardrobe.",
+        "price": 18.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=7",
+        "id": 7,
+        "title": "Wireless Earbuds",
+        "category": "electronics",
+        "description": "Compact and high-quality wireless earbuds.",
+        "description2": "These compact and high-quality wireless earbuds deliver exceptional sound quality without the hassle of tangled wires. Perfect for listening to music, podcasts, or making calls, these earbuds offer long battery life, a secure fit, and an ergonomic design that makes them ideal for on-the-go use. With their sleek look and powerful audio performance, they're the ultimate accessory for music lovers.",
+        "price": 29.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=8",
+        "id": 8,
+        "title": "Diamond Ring",
+        "category": "jewelery",
+        "description": "Beautiful diamond ring with a modern design.",
+  "description2": "This stunning diamond ring is a true symbol of elegance and luxury. Featuring a radiant diamond set in a sleek, modern band, it’s the perfect choice for engagements, anniversaries, or simply to add a touch of sparkle to your collection. The timeless design and high-quality craftsmanship make this ring an heirloom piece that will be cherished for years to come.",
+        "price": 999.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=9",
+        "id": 9,
+        "title": "Men's Formal Shirt",
+        "category": "men's clothing",
+        "description": "Elegant shirt for formal occasions.",
+        "description2": "This elegant formal shirt is designed to provide both comfort and style for any formal occasion. Made from premium cotton fabric, it’s soft against the skin and provides a tailored fit for a sharp, sophisticated look. Whether you're attending a business meeting or a special event, this shirt ensures you look your best with a crisp, polished appearance.",
+        "price": 24.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=10",
+        "id": 10,
+        "title": "Women's Leather Jacket",
+        "category": "women's clothing",
+        "description": "Stylish leather jacket for women.",
+        "description2": "This stylish leather jacket is a must-have piece for any fashion-forward wardrobe. Made from high-quality leather, it provides both warmth and a chic, edgy look. With a flattering cut and versatile design, it can be paired with almost anything—from dresses to jeans, offering a sophisticated yet rebellious style that never goes out of fashion.",
+        "price": 89.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=11",
+        "id": 11,
+        "title": "Laptop",
+        "category": "electronics",
+        "description": "High-performance laptop for work and gaming.",
+        "description2": "This high-performance laptop is perfect for both work and play. Equipped with the latest processors, ample storage, and a vibrant high-resolution display, it’s designed to handle everything from heavy multitasking to gaming. Whether you're working on creative projects or enjoying entertainment, this laptop ensures smooth performance and reliability.",
+        "price": 999.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=12",
+        "id": 12,
+        "title": "Silver Earrings",
+        "category": "jewelery",
+        "description": "Elegant earrings made of sterling silver.",
+        "description2": "These elegant sterling silver earrings offer a minimalist yet chic design. Whether you're dressing up for a night out or looking to add a subtle touch of elegance to your everyday outfit, these earrings are perfect for any occasion. Their timeless design ensures they will remain a favorite accessory for years to come.",
+        "price": 49.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=13",
+        "id": 13,
+        "title": "Men's Sweatshirt",
+        "category": "men's clothing",
+        "description": "Comfortable and warm sweatshirt.",
+        "description2": "This comfortable and warm sweatshirt is perfect for lounging or casual outings. Made from soft cotton fabric, it provides a cozy fit while offering breathability and comfort. The relaxed design ensures freedom of movement, making it a great choice for chilly days or layering over a t-shirt for added warmth.",
+        "price": 29.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=14",
+        "id": 14,
+        "title": "Women's Winter Scarf",
+        "category": "women's clothing",
+        "description": "Warm and stylish scarf for winter.",
+        "description2": "This warm and stylish scarf is the perfect accessory for cold weather. Made from soft, cozy material, it helps to keep you comfortable while adding a touch of elegance to your winter outfits. Whether you're heading out for errands or attending a winter event, this scarf is the ideal companion to keep you warm and fashionable.",
+        "price": 12.49
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=15",
+        "id": 15,
+        "title": "Smartwatch",
+        "category": "electronics",
+        "description": "Advanced smartwatch with fitness tracking.",
+        "description2": "This advanced smartwatch offers a wide range of features, including fitness tracking, heart rate monitoring, and notifications. Designed with a sleek and modern appearance, it pairs seamlessly with your smartphone to help you stay connected while tracking your health goals. Whether you're working out or going about your daily activities, this smartwatch is a practical and stylish accessory.",
+        "price": 149.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=16",
+        "id": 16,
+        "title": "Pearl Bracelet",
+        "category": "jewelery",
+        "description": "Classic pearl bracelet for any outfit.",
+        "price": 79.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=17",
+        "id": 17,
+        "title": "Men's Casual Pants",
+        "category": "men's clothing",
+        "description": "Comfortable casual pants for everyday wear.",
+        "price": 34.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=18",
+        "id": 18,
+        "title": "Women's Blouse",
+        "category": "women's clothing",
+        "description": "Elegant blouse for formal occasions.",
+        "price": 19.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=19",
+        "id": 19,
+        "title": "Tablet",
+        "category": "electronics",
+        "description": "Portable tablet with a high-resolution display.",
+        "price": 299.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=20",
+        "id": 20,
+        "title": "Gold Bracelet",
+        "category": "jewelery",
+        "description": "Luxurious gold bracelet with a sleek design.",
+        "price": 249.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=21",
+        "id": 21,
+        "title": "Men's Leather Boots",
+        "category": "men's clothing",
+        "description": "Durable and stylish leather boots.",
+        "price": 69.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=22",
+        "id": 22,
+        "title": "Women's Evening Gown",
+        "category": "women's clothing",
+        "description": "Elegant evening gown for special events.",
+        "price": 199.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=23",
+        "id": 23,
+        "title": "Gaming Headset",
+        "category": "electronics",
+        "description": "High-quality headset for immersive gaming.",
+        "price": 79.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=24",
+        "id": 24,
+        "title": "Diamond Earrings",
+        "category": "jewelery",
+        "description": "Beautiful diamond earrings for special occasions.",
+        "price": 1299.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=25",
+        "id": 25,
+        "title": "Men's Winter Jacket",
+        "category": "men's clothing",
+        "description": "Warm and waterproof winter jacket.",
+        "price": 119.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=26",
+        "id": 26,
+        "title": "Women's Cardigan",
+        "category": "women's clothing",
+        "description": "Comfortable and stylish cardigan.",
+        "price": 34.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=27",
+        "id": 27,
+        "title": "4K LED TV",
+        "category": "electronics",
+        "description": "Ultra HD 4K LED TV with vibrant colors.",
+        "price": 499.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=28",
+        "id": 28,
+        "title": "Gold Pendant Necklace",
+        "category": "jewelery",
+        "description": "Elegant gold pendant necklace.",
+        "price": 299.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=29",
+        "id": 29,
+        "title": "Men's Cargo Pants",
+        "category": "men's clothing",
+        "description": "Utility pants with multiple pockets.",
+        "price": 49.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=30",
+        "id": 30,
+        "title": "Women's Wool Coat",
+        "category": "women's clothing",
+        "description": "Warm and stylish wool coat.",
+        "price": 159.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=31",
+        "id": 31,
+        "title": "Wireless Keyboard",
+        "category": "electronics",
+        "description": "Ergonomic wireless keyboard with backlight.",
+        "price": 39.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=32",
+        "id": 32,
+        "title": "Platinum Ring",
+        "category": "jewelery",
+        "description": "Premium platinum ring with elegant design.",
+        "price": 1499.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=33",
+        "id": 33,
+        "title": "Men's Running Shoes",
+        "category": "men's clothing",
+        "description": "Comfortable running shoes with good grip.",
+        "price": 59.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=34",
+        "id": 34,
+        "title": "Women's Handbag",
+        "category": "women's clothing",
+        "description": "Elegant leather handbag for daily use.",
+        "price": 74.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=35",
+        "id": 35,
+        "title": "Bluetooth Speaker",
+        "category": "electronics",
+        "description": "Portable speaker with high-quality sound.",
+        "price": 49.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=36",
+        "id": 36,
+        "title": "Sapphire Necklace",
+        "category": "jewelery",
+        "description": "Elegant necklace with a sapphire pendant.",
+        "price": 599.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=37",
+        "id": 37,
+        "title": "Men's Sunglasses",
+        "category": "men's clothing",
+        "description": "Stylish sunglasses with UV protection.",
+        "price": 19.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=38",
+        "id": 38,
+        "title": "Women's High Heels",
+        "category": "women's clothing",
+        "description": "Elegant high heels for formal events.",
+        "price": 89.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=39",
+        "id": 39,
+        "title": "Noise-Canceling Headphones",
+        "category": "electronics",
+        "description": "Comfortable headphones with active noise cancellation.",
+        "price": 249.99
+      },
+      {
+        "image": "https://unsplash.it/50/50?image=40",
+        "id": 40,
+        "title": "Ruby Earrings",
+        "category": "jewelery",
+        "description": "Elegant ruby earrings for special occasions.",
+        "price": 1099.99
+      }
+    ]
+  }
