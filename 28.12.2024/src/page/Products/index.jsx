@@ -3,6 +3,7 @@ import controller from "../../services";
 import { endpoints } from "../../services/constants"; 
 import ProductCard from "../../components/ProductCard"; 
 import { Container, Row, Col, Form } from "react-bootstrap"; 
+  // import "./index.css"
 
 const Products = () => { 
   const [products, setProducts] = useState([]); 

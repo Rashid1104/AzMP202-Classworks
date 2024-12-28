@@ -1,8 +1,9 @@
-
-
+import "./index.css"
 const Home = () => {
   return (
-    <div>Welcome to the Home Page</div>
+    <>
+      <h1 className="h1">Welcome to the Home Page</h1>
+     </>
   )
 }
 

@@ -1,46 +1,105 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import controller from "../../services/index"; 
-import { endpoints } from "../../services/constants"; 
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import controller from "../../services";
+import { endpoints } from "../../services/constants";
+import styles from "./index.module.scss";
+import ImageGallery from "../../components/ImageGallery";
+import { Star } from "lucide-react";
 
 const ProductDetails = () => {
-  const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
 
-  const getProductDetails = async () => {
+  const { id } = useParams();
+  const nav = useNavigate();
+
+  const getProduct = async () => {
     try {
-      const data = await controller.getALLData(`${endpoints.products}/${id}`);
+      const data = await controller.getDataById(endpoints.products, id);
       setProduct(data);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
   };
 
   useEffect(() => {
-    getProductDetails(); 
-  }, [id]); 
+    getProduct();
+  }, [id]);
 
-  if (!product) {
-    return <div>Loading...</div>;
-  }
+  const handleQuantityChange = (e) => {
+    setQuantity(Math.max(1, parseInt(e.target.value)));
+  };
+
+  const handleAddToCart = () => {
+    console.log(`Added ${quantity} ${product.title} to cart`);
+  };
+
+  const handleGoBack = () => {
+    nav(-1);
+  };
 
   return (
-    <div className="product-details">
-      <h1>{product.title}</h1>
-      <img src={product.image} alt={product.title} width="300" />
-      <p><strong>Category:</strong> {product.category}</p>
-      <p><strong>Description:</strong> {product.description}</p>
-      <p><strong>Price:</strong> ${product.price}</p>
+    <>
       <div>
-        <strong>Rating:</strong>
-        {[...Array(5)].map((_, i) => (
-          <span key={i} className={i < product.rating.rate ? "text-warning" : "text-muted"}>
-            {i < product.rating.rate ? "★" : "☆"}
-          </span>
-        ))}
-        <span className="text-muted"> {product.rating.rate} ({product.rating.count})</span>
+        {product && (
+          <div className={styles.productDetails}>
+            <div className={styles.productImage}>
+              <ImageGallery
+                images={product.images}
+                thumbnail={product.image}
+              />
+            </div>
+            <div className={styles.productInfo}>
+              <h1 className={styles.productTitle}>{product.title}</h1>
+              <p className={styles.productBrand}>By {product.brand}</p>
+              <div className={styles.productRating}>
+                <Star className={styles.starIcon} />
+                <span>{product.rating.rate}</span>
+                <span>({product.rating.count} reviews)</span>
+              </div>
+              <p className={styles.productPrice}>${product.price}</p>
+              <p className={styles.productDescription}>
+                {product.description}
+              </p>
+              <div className={styles.productActions}>
+                <input
+                  type="number"
+                  min="1"
+                  value={quantity}
+                  onChange={handleQuantityChange}
+                  className={styles.quantityInput}
+                />
+                <button
+                  onClick={handleAddToCart}
+                  className={styles.addToCartButton}
+                >
+                  Add to Cart
+                </button>
+              </div>
+              <p className={styles.stockInfo}>
+                In Stock: {product.stock} units
+              </p>
+              {product.tags && product.tags.length > 0 && (
+                <div className={styles.productTags}>
+                  {product.tags.map((tag, index) => (
+                    <span key={index} className={styles.tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+              <button
+                onClick={handleGoBack}
+                className={styles.goBackBtn}
+              >
+                Go Back
+              </button>
+            </div>
+          </div>
+        )}
       </div>
-    </div>
+    </>
   );
 };
 
