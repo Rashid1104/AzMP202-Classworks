@@ -1,178 +1,123 @@
-import { Col, Row, Table, Tooltip, Button } from "antd";
-import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
-import { useEffect, useState } from "react";
-import controller from "../../../services";
-import { endpoints } from "../../../services/constants";
-import Swal from "sweetalert2";
+import React, { useState, useEffect } from 'react';
+import Table from 'react-bootstrap/Table';
+import { FaTrashAlt, FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 
-const columns = [
-  {
-    title: "ID",
-    dataIndex: "id",
-  },
-  {
-    title: "Photo",
-    dataIndex: "image",
-    render: (text, record) => {
-      return <img src={text} alt={record.title} width={100} />;
-    },
-  },
-  {
-    title: "Title",
-    dataIndex: "title",
-    showSorterTooltip: {
-      target: "full-header",
-    },
-    sorter: (a, b) =>
-      a.title.toLowerCase().localeCompare(b.title.toLowerCase()),
-  },
-  {
-    title: "Description",
-    dataIndex: "description",
-    render: (text, record) => (
-      <Tooltip title={text} color={"black"} key={"black"}>
-        {text.slice(0, 50)}...
-      </Tooltip>
-    ),
-  },
-  {
-    title: "Price",
-    dataIndex: "price",
-    sorter: (a, b) => a.price - b.price,
-  },
-  {
-    title: "Category",
-    dataIndex: "category",
-  },
-  {
-    title: "Rate",
-    dataIndex: "rating",
-    render: (rating) => (rating ? rating.rate : "N/A"),
-  },
-  {
-    title: "Count",
-    dataIndex: "rating",
-    render: (rating) => (rating ? rating.count : "N/A"),
-  },
-  {
-    title: "Actions",
-    dataIndex: "actions",
-    render: (_, record) => (
-      <div>
-        <Button
-          type="link"
-          icon={<EditOutlined />}
-          onClick={() => handleEdit(record)}
-        >
-          Edit
-        </Button>
-        <Button
-          type="link"
-          icon={<DeleteOutlined />}
-          danger
-          onClick={() => handleDelete(record.id)}
-        >
-          Delete
-        </Button>
-      </div>
-    ),
-  },
-];
+const Basket = () => {
+  // Состояние для хранения корзины
+  const [basket, setBasket] = useState([]);
 
-const handleEdit = (record) => {
-  Swal.fire({
-    title: `Edit Product: ${record.title}`,
-    html: `
-      <input id="swal-input-title" class="swal2-input" value="${record.title}" placeholder="Title" />
-      <input id="swal-input-price" class="swal2-input" value="${record.price}" placeholder="Price" type="number" />
-      <input id="swal-input-description" class="swal2-input" value="${record.description}" placeholder="Description" />
-      <input id="swal-input-category" class="swal2-input" value="${record.category}" placeholder="Category" />
-      <input id="swal-input-image" class="swal2-input" value="${record.image}" placeholder="Image URL" />
-    `,
-    focusConfirm: false,
-    preConfirm: () => {
-      const title = document.getElementById('swal-input-title').value;
-      const price = document.getElementById('swal-input-price').value;
-      const description = document.getElementById('swal-input-description').value;
-      const category = document.getElementById('swal-input-category').value;
-      const image = document.getElementById('swal-input-image').value;
-
-      if (!title || !price || !description || !category || !image) {
-        Swal.showValidationMessage('All fields are required');
-        return false;
-      }
-
-      return { title, price: parseFloat(price), description, category, image };
-    }
-  }).then((result) => {
-    if (result.isConfirmed) {
-      const updatedData = result.value;
-      controller
-        .editDataById(endpoints.products, record.id, updatedData)
-        .then(() => {
-          Swal.fire("Updated!", "Product has been updated successfully.", "success");
-          window.location.reload();  
-        })
-        .catch((error) => {
-          Swal.fire("Error", "There was an error updating the product.", "error");
-          console.error("Error editing product:", error);
-        });
-    }
-  });
-};
-
-const handleDelete = (id) => {
-  Swal.fire({
-    title: "Are you sure?",
-    text: "You won't be able to revert this!",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonColor: "#3085d6",
-    cancelButtonColor: "#d33",
-    confirmButtonText: "Yes, delete it!",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      controller
-        .deleteDataById(endpoints.products, id)
-        .then(() => {
-          Swal.fire("Deleted!", "The product has been deleted.", "success");
-          window.location.reload();
-        })
-        .catch((error) => {
-          Swal.fire("Error", "There was an error deleting the product.", "error");
-          console.error("Error deleting product:", error);
-        });
-    }
-  });
-};
-
-const AdminProducts = () => {
-  const [products, setProducts] = useState([]);
-
+  // Загрузка корзины из localStorage при первом рендере
   useEffect(() => {
-    controller.getAllData(endpoints.products).then((data) => {
-      setProducts(data);
-    });
+    const storedBasket = JSON.parse(localStorage.getItem('basket')) || [];
+    setBasket(storedBasket);
   }, []);
 
+  // Функция для обновления корзины в localStorage
+  const updateBasketInLocalStorage = (newBasket) => {
+    localStorage.setItem('basket', JSON.stringify(newBasket));
+    setBasket(newBasket);
+  };
+
+  // Увеличение количества товара
+  const increaseItemQuantity = (id) => {
+    const updatedBasket = basket.map(item =>
+      item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+    );
+    updateBasketInLocalStorage(updatedBasket);
+  };
+
+  // Уменьшение количества товара
+  const decreaseItemQuantity = (id) => {
+    const updatedBasket = basket.map(item =>
+      item.id === id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item
+    );
+    updateBasketInLocalStorage(updatedBasket);
+  };
+
+  // Удаление товара из корзины
+  const removeItemFromBasket = (id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const updatedBasket = basket.filter(item => item.id !== id);
+        updateBasketInLocalStorage(updatedBasket);
+        Swal.fire("Deleted!", "The product has been deleted.", "success");
+      }
+    });
+  };
+
+  // Вычисление общей стоимости
+  const calculateTotalPrice = () => {
+    return basket.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+  };
+
   return (
-    <div id="admin-products">
+    <div id="basket">
       <div className="container">
-        <div className="admin-products">
-          <Table
-            columns={columns}
-            dataSource={products}
-            onChange={(pagination, filters, sorter, extra) => {
-              console.log("params", pagination, filters, sorter, extra);
-            }}
-            rowKey="id"
-          />
+        <div className="basket-container">
+          <Table striped bordered hover responsive>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Count</th>
+                <th>Increase</th>
+                <th>Decrease</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              {basket.map((item) => (
+                <tr key={item.id}>
+                  <td>{item.id}</td>
+                  <td>{item.title}</td>
+                  <td>{item.description.slice(0, 50)}...</td>
+                  <td>${item.price}</td>
+                  <td>{item.quantity}</td>
+                  <td>
+                    <FaPlusCircle
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => increaseItemQuantity(item.id)}
+                    />
+                  </td>
+                  <td>
+                    <FaMinusCircle
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => decreaseItemQuantity(item.id)}
+                    />
+                  </td>
+                  <td>
+                    <FaTrashAlt
+                      style={{ cursor: 'pointer', color: 'red' }}
+                      onClick={() => removeItemFromBasket(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colSpan="7" className="text-right"><strong>Total:</strong></td>
+                <td><strong>${calculateTotalPrice()}</strong></td>
+              </tr>
+            </tfoot>
+          </Table>
         </div>
       </div>
     </div>
   );
 };
 
-export default AdminProducts;
+export default Basket;
 
 

@@ -5,6 +5,7 @@ import { endpoints } from "../../services/constants";
 import styles from "./index.module.scss";
 import ImageGallery from "../../components/ImageGallery";
 import { Star } from "lucide-react";
+import { Helmet } from 'react-helmet-async';
 
 const ProductDetails = () => {
   const [product, setProduct] = useState(null);
@@ -41,6 +42,11 @@ const ProductDetails = () => {
 
   return (
     <>
+      <Helmet> 
+        <title>{product ? `${product.title} - Product Details` : "Product Details"}</title> 
+        <meta name="description" content={product ? product.description : "Product details page"} />
+      </Helmet>
+
       <div>
         {product && (
           <div className={styles.productDetails}>
