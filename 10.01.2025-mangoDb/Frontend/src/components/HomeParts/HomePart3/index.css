@@ -1,0 +1,19 @@
+.btn{
+    border-radius: none;
+    color: #fff;
+    padding: 12px;
+    margin-right: 7px;
+    border: 1px solid white;
+}
+.btn:hover{
+    background-color: #fff;
+     color: #000;
+}
+.logo-text{
+    color: #fff;
+    font-size: 3rem;
+}
+.btn-Shop-Now{
+    border-radius: 0px;
+    padding: 14px 3rem;
+}

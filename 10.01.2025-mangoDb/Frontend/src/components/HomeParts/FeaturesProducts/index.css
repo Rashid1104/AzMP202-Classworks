@@ -1,0 +1,35 @@
+.products{
+    background-color: #F8F9FA;
+}
+.cols{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    line-height: 2.5rem;
+
+}
+.col-6 p{
+    opacity: 0.6;
+}
+.cols img{
+    width: 100%;
+}
+.price{
+    opacity: 0.6;
+    font-size: 1.2rem;
+}
+.product-actions-features{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 10px;
+}
+.h2-About{
+    margin-bottom: 3rem;
+}
+.row-cols{
+    display: flex;
+    gap: 2rem;
+}

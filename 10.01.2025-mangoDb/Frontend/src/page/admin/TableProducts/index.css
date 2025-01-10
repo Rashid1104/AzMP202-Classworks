@@ -1,0 +1,35 @@
+.table-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Product-List{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.actions{
+    display: flex;
+align-items: center;
+    gap: 10px;
+}
+.btns{
+    border: none;
+    padding: 8px 17px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.btn-edit{
+    background-color: rgb(1, 158, 1);
+}
+.btn-edit:hover{
+    background-color: rgb(2, 102, 2);
+}
+.btn-delete{
+    background-color: rgb(190, 2, 2);
+}
+.btn-delete:hover{
+    background-color: rgb(155, 1, 1);
+}

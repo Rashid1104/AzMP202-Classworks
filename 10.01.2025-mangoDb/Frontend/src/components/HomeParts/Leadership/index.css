@@ -1,0 +1,33 @@
+.texts{
+    opacity: 0.6;
+    text-align: center;
+}
+.span-text{
+    margin-bottom: 10px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.icon-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+.icon-btn:hover{
+    opacity: 1;
+}
+.icon{
+    font-size: 12px;
+}
